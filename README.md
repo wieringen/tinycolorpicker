@@ -1,19 +1,19 @@
-[tinycircleslider](http://baijs.com/tinycircleslider) [![Build Status](https://secure.travis-ci.org/wieringen/tinycircleslider.png?branch=master)](http://travis-ci.org/wieringen/tinycircleslider)
+[tinycolorpicker](http://baijs.com/tinycolorpicker) [![Build Status](https://secure.travis-ci.org/wieringen/tinycolorpicker.png?branch=master)](http://travis-ci.org/wieringen/tinycolorpicker)
 ==================================================
 
-What you need to build your own version of tinycircleslider
+What you need to build your own version of tinycolorpicker
 --------------------------------------
 
-In order to build tinycircleslider, you need to have Node.js/npm, and git 1.7 or later installed.
+In order to build tinycolorpicker, you need to have Node.js/npm, and git 1.7 or later installed.
 
 
-How to build your own tinycircleslider
+How to build your own tinycolorpicker
 ----------------------------
 
 First, clone a copy of the main imageCreator git repo by running:
 
 ```bash
-git clone git://github.com/wieringen/tinycircleslider.git
+git clone git://github.com/wieringen/tinycolorpicker.git
 ```
 
 Install the grunt-cli package so that you will have the correct version of grunt available from any project that needs it. This should be done as a global install:
@@ -22,10 +22,10 @@ Install the grunt-cli package so that you will have the correct version of grunt
 npm install -g grunt-cli
 ```
 
-Enter the tinycircleslider directory and install the Node dependencies, this time *without* specifying a global install:
+Enter the tinycolorpicker directory and install the Node dependencies, this time *without* specifying a global install:
 
 ```bash
-cd tinycircleslider && npm install
+cd tinycolorpicker && npm install
 ```
 
 Make sure you have `grunt` installed by testing:
@@ -34,13 +34,13 @@ Make sure you have `grunt` installed by testing:
 grunt -version
 ```
 
-Then, to get a complete, minified (w/ Uglify.js), linted (w/ JSHint) version of tinycircleslider, type the following:
+Then, to get a complete, minified (w/ Uglify.js), linted (w/ JSHint) version of tinycolorpicker, type the following:
 
 ```bash
 grunt
 ```
 
-The built version of tinycircleslider will be put in the `dist/` subdirectory, along with the minified copy and associated map file.
+The built version of tinycolorpicker will be put in the `dist/` subdirectory, along with the minified copy and associated map file.
 
 
 Questions?
