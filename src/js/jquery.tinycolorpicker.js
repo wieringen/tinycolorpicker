@@ -186,7 +186,7 @@
 
                     var color = $(this).parent().attr("data-color");
 
-                    self.setColor(color)
+                    self.setColor(color);
 
                     $dropdown.hide();
                 });
@@ -202,7 +202,7 @@
                 ,   colorData = context.getImageData(event.pageX - offset.left, event.pageY - offset.top, 1, 1).data
                 ;
 
-                self.setColor("rgb(" + colorData[0] + "," + colorData[1] + "," + colorData[2] + ")")
+                self.setColor("rgb(" + colorData[0] + "," + colorData[1] + "," + colorData[2] + ")");
 
                 $container.trigger("change", [self.colorHex, self.colorRGB]);
             }
@@ -243,7 +243,7 @@
             }
 
             return "#" + hex(result[0]) + hex(result[1]) + hex(result[2]);
-        }
+        };
 
        return initialize();
     }
