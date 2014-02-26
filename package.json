@@ -1,0 +1,41 @@
+{
+  "name": "tinycolorpicker",
+  "version": "0.0.5",
+  "description": "A lightweight cross browser jQuery based scrollbar.",
+  "homepage": "http://www.baijs.com/tinycolorpicker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wieringen/tinycolorpicker.git"
+  },
+  "keywords": [
+    "UI",
+    "jQuery",
+    "Mobile",
+    "colorpicker",
+    "javascript"
+  ],
+  "author": {
+    "name": "Maarten Baijs",
+    "email": "wieringen@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/wieringen/tinycolorpicker/blob/master/MIT-LICENSE.txt"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/wieringen/tinycolorpicker/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-text-replace": "~0.3.9",
+    "grunt-contrib-compress": "~0.5.2",
+    "grunt-ftp-deploy": "~0.1.1",
+    "grunt-contrib-jshint": "~0.8.0",
+    "baijs": "0.0.1"
+  }
+}

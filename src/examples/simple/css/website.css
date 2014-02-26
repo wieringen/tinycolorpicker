@@ -1,0 +1,59 @@
+#colorPicker
+{
+    width:          30px;
+    height:         30px;
+    position: relative;
+    clear: both;
+    margin: 0 auto 20px;
+}
+
+.track {
+    background:     #EFEFEF url(../images/text-color.png) no-repeat 50% 50%;
+    height:         150px;
+    width:          150px;
+    padding:        10px;
+    position:       absolute;
+    cursor:         crosshair;
+    float:          left;
+    left:           -71px;
+    top:            -71px;
+    display:        none;
+    border:         1px solid #ccc;
+    z-index:        10;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 150px;
+
+}
+
+.track canvas {}
+
+.hex {
+    float:          left;
+    font-size:      10px;
+    margin:         0 0 0 5px;
+    line-height:    13px;
+    display: none;
+}
+
+.color {
+    width:          25px;
+    height:         25px;
+    padding:        1px;
+    border:         1px solid #ccc;
+    display:        block;
+    position:       relative;
+    z-index:        11;
+    background-color: #EFEFEF;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    border-radius: 27px;
+}
+
+.colorInner {
+    width:          25px;
+    height:         25px;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    border-radius: 27px;
+}
