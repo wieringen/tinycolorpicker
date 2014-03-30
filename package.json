@@ -1,7 +1,7 @@
 {
   "name": "tinycolorpicker",
-  "version": "0.0.5",
-  "description": "A lightweight cross browser jQuery based scrollbar.",
+  "version": "0.0.6",
+  "description": "A lightweight cross browser jQuery based colorpicker.",
   "homepage": "http://www.baijs.com/tinycolorpicker",
   "repository": {
     "type": "git",
@@ -36,6 +36,6 @@
     "grunt-contrib-compress": "~0.5.2",
     "grunt-ftp-deploy": "~0.1.1",
     "grunt-contrib-jshint": "~0.8.0",
-    "baijs": "0.0.1"
+    "baijs": "latest"
   }
 }
