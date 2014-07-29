@@ -1,7 +1,7 @@
 {
   "name": "tinycolorpicker",
-  "title": "Tiny Circleslider",
-  "version": "0.0.6",
+  "title": "Tiny Colorpicker",
+  "version": "0.0.7",
   "description": "A lightweight cross browser jQuery based colorpicker.",
   "homepage": "http://www.baijs.com/tinycolorpicker",
   "repository": {

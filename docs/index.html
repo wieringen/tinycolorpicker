@@ -116,7 +116,7 @@
                 <pre class="prettyprint"><code>
 $(document).ready(function()
 {
-    $("#colorpicker1").colorpicker();
+    $("#colorpicker1").tinycolorpicker();
 });
                 </code></pre>
 
@@ -138,7 +138,7 @@ $(document).ready(function()
                 <pre class="prettyprint"><code>
 $(document).ready(function()
 {
-    $("#colorpicker2").colorpicker();
+    $("#colorpicker2").tinycolorpicker();
 });
                     </code></pre>
 
@@ -178,7 +178,8 @@ $(document).ready(function()
 $(document).ready(function()
 {
     var $box = $('#box');
-    var box  = $box.tinycolorpicker();
+
+    $box.tinycolorpicker();
 
     $box.bind("change", function()
     {

@@ -7,11 +7,15 @@
 	<link rel="stylesheet" href="css/website.css" type="text/css" media="screen"/>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="../../js/jquery.tinycolorpicker.js"></script>
+	<script type="text/javascript" src="../../lib/jquery.tinycolorpicker.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function()
         {
-			$('#colorPicker').tinycolorpicker();
+			var $box = $('#colorPicker');
+            $box.tinycolorpicker();
+            var box = $box.data("plugin_tinycolorpicker")
+
+            box.setColor("#ff0000");
 		});
 	</script>
 </head>
