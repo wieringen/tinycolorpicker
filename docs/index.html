@@ -10,7 +10,7 @@
         <meta name="author" content="Maarten baijs" />
         <meta name="copyright" content="" />
 
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../node_modules/baijs/css/website.css" type="text/css" media="screen"/>
         <link rel="stylesheet" href="css/tinycolorpicker.css" type="text/css" media="screen"/>
 
@@ -23,7 +23,7 @@
         <![endif]-->
 
         <!-- Add jQuery library -->
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 
         <!-- Add tinyscrollbar JS -->
         <script type="text/javascript" src="../lib/jquery.tinycolorpicker.js"></script>
@@ -142,6 +142,35 @@ $(document).ready(function()
 });
                     </code></pre>
 
+                <p>The example below is to show how to use the setColor method.</p>
+                    <div id="colorPicker3">
+                    <a class="color"><div class="colorInner"></div></a>
+                    <div class="track"></div>
+                    <ul class="dropdown"><li></li></ul>
+                    <input type="hidden" class="colorInput"/>
+                </div>
+
+                <script type="text/javascript">
+                    $(document).ready(function()
+                    {
+                        $("#colorPicker3").tinycolorpicker();
+                        var picker = $('#colorPicker3').data("plugin_tinycolorpicker");
+
+                        picker.setColor("#FF45CC");
+                    });
+                </script>
+
+                <pre class="prettyprint"><code>
+$(document).ready(function()
+{
+    $("#colorPicker3").tinycolorpicker();
+    var picker = $('#colorPicker3').data("plugin_tinycolorpicker");
+
+    picker.setColor("#FG45CC");
+});
+                    </code></pre>
+
+
             </section>
 
             <section class="block">
@@ -168,8 +197,8 @@ $(document).ready(function()
 
                 <h2>Methods</h2>
                 <ul class="list">
-                    <li><strong>hexToRgb</strong> -- Convert a hex color to rgb color</li>
-                    <li><strong>rgbToHex</strong> -- Convert a rgb color to hex</li>
+                    <li><strong>hexToRgb</strong> -- Convert a hex color to rgb color (returns string)</li>
+                    <li><strong>rgbToHex</strong> -- Convert a rgb color to hex and (returns string)</li>
                     <li><strong>setColor</strong> -- Set the color of the picker it takes a rgb or hex color.</li>
                 </ul>
 
