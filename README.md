@@ -10,7 +10,7 @@ In order to build tinycolorpicker, you need to have Node.js/npm, and git 1.7 or 
 How to build your own tinycolorpicker
 ----------------------------
 
-First, clone a copy of the main imageCreator git repo by running:
+First, clone a copy of the main tinycolorpicker git repo by running:
 
 ```bash
 git clone git://github.com/wieringen/tinycolorpicker.git
