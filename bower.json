@@ -1,0 +1,27 @@
+{
+  "name": "tinycolorpicker",
+  "version": "0.1.0",
+  "description": "A lightweight cross browser jQuery based colorpicker.",
+  "main": "lib/jquery.tinycolorpicker.js",
+  "ignore": [
+      "**/.*",
+      "bower.json",
+      "Gruntfile.coffee",
+      "package.json",
+      "README.md"
+  ],
+  "resolutions": {
+    "jquery": "~1.5.0"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-text-replace": "~0.3.9",
+    "grunt-contrib-compress": "~0.5.2",
+    "grunt-ftp-deploy": "~0.1.1",
+    "grunt-contrib-jshint": "~0.8.0",
+    "baijs": "latest"
+  }
+}

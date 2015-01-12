@@ -67,6 +67,7 @@ module.exports = ( grunt ) ->
                 files :
 
                     "lib/jquery.<%= pkg.name %>.min.js" : ["lib/jquery.<%= pkg.name %>.js"]
+                    "lib/<%= pkg.name %>.min.js"        : ["lib/<%= pkg.name %>.js"]
 
         #  Replace image file paths in css and correct css path in the index.
         #
