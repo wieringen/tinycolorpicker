@@ -1,4 +1,4 @@
-[tinycolorpicker](http://baijs.com/tinycolorpicker) [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url]
+[tinycolorpicker](http://baijs.com/tinycolorpicker) [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![NPM version][npm-image]][npm-url]
 ==================================================
 
 What you need to build your own version of tinycolorpicker
@@ -54,4 +54,5 @@ If you have any questions, please feel free to email [me](mailto:wieringen@gmail
 [coveralls-image]: https://img.shields.io/coveralls/wieringen/tinycolorpicker/master.svg
 [coveralls-url]: https://coveralls.io/r/wieringen/tinycolorpicker?branch=master
 
-
+[npm-image]: https://badge.fury.io/js/tinycolorpicker.png
+[npm-url]: http://badge.fury.io/js/tinycolorpicker
