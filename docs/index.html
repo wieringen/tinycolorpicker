@@ -12,26 +12,35 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
 
         <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <!-- build:[href] css/ -->
         <link rel="stylesheet" href="../node_modules/baijs/css/website.css" type="text/css" media="screen"/>
+        <!-- /build -->
         <link rel="stylesheet" href="css/tinycolorpicker.css" type="text/css" media="screen"/>
 
         <!--[if lte IE 8]>
             <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
         <![endif]-->
 
+        <!-- build:[href] css/ -->
         <!--[if lte IE 7]>
             <link rel="stylesheet" href="../node_modules/baijs/css/website_ie.css" type="text/css" media="screen"/>
         <![endif]-->
+        <!-- /build -->
 
-        <!-- Add jQuery library -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <!--[if lte IE 5]>
+            <script type="text/javascript"> function handleError() { return true; } window.onerror = handleError; </script>
+        <![endif]-->
 
-        <!-- Add tinyscrollbar JS -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+        <!-- build:[src] js/ -->
         <script type="text/javascript" src="../lib/jquery.tinycolorpicker.js"></script>
+        <!-- /build -->
 
-        <!-- Next files are only for this website! -->
+        <!-- build:[src] js/ -->
         <script type="text/javascript" src="../node_modules/baijs/js/prettify.js"></script>
         <script type="text/javascript" src="../node_modules/baijs/js/website.js"></script>
+        <!-- /build -->
+        <script type="text/javascript">window.google_analytics_uacct = "UA-4459599-4";</script>
     </head>
 
     <body>
@@ -44,7 +53,7 @@
             <span class="slogan"> A lightweight cross browser color picker.</span>
 
             <section class="download">
-                <a href="tinycolorpicker-@@bnr@@.zip" class="btn">Download v@@bnr@@</a>
+                <a href="tinycolorpicker-<%= version %>.zip" class="btn">Download v<%= version %></a>
                 <p>The latest source is available on <a href="https://github.com/wieringen/tinycolorpicker">GitHub</a>.</p>
             </section>
         </header>
@@ -173,8 +182,6 @@ $(document).ready(function()
     picker.setColor("#FG45CC");
 });
                     </code></pre>
-
-
             </section>
 
             <section class="block">
@@ -191,40 +198,39 @@ $(document).ready(function()
             </section>
 
             <section class="block">
+                <!-- build:include ../../docs/technical/generated/classes/tinycolorpicker.html -->
+                <p>The generated API docs will be included here.</p>
+                <!-- /build -->
+            </section>
 
-                <h2>Initialize options</h2>
-                <p>A list of all the available options and there default value</p>
-                <ul class="list">
-                    <li><strong>colors        : []</strong> -- fallback colors for old browsers (ie8-).</li>
-                    <li><strong>backgroundUrl : ""</strong> -- It will look for a css image on the track div. If not found it will look if there's a url in this property.</li>
-                </ul>
-
-                <h2>Methods</h2>
-                <ul class="list">
-                    <li><strong>hexToRgb</strong> -- Convert a hex color to rgb color (returns string)</li>
-                    <li><strong>rgbToHex</strong> -- Convert a rgb color to hex and (returns string)</li>
-                    <li><strong>setColor</strong> -- Set the color of the picker it takes a rgb or hex color.</li>
-                </ul>
-
-                <h2>Events</h2>
+            <section class="block">
+                <h2>Usage</h2>
                 <pre class="prettyprint"><code>
 $(document).ready(function()
 {
-    var $box = $('#box');
+    // Initialize a colorpicker like this.
+    //
+    $('#box').tinycolorpicker();
 
-    $box.tinycolorpicker();
+    // Try this to get access to the actual colorpicker instance.
+    //
+    var box = $('#box').data("plugin_tinycolorpicker");
 
+    // Now you have access to all the methods and properties.
+    //
+    // box.setColor("#cccccc");
+    // console.log(box.colorRGB);
+    //
+    // etc..
+
+    // You can bind to the change event like this.
+    //
     $box.bind("change", function()
     {
-        console.log("do something on every change of color");
+        console.log("do something whhen a new color is set");
     });
 });
                 </code></pre>
-
-                <ul class="list">
-                    <li><strong>change</strong> -- This event fires on every color change.</li>
-                </ul>
-
             </section>
         </article>
 
