@@ -23,4 +23,34 @@ describe('A single Tinycolorpicker', function() {
         expect(instance).to.be.a('object');
         expect(instance._name).to.equal('tinycolorpicker');
     });
+
+    it('should be possible to set to a specific hex color.', function() {
+        var instance = $('#colorPicker').tinycolorpicker().data('plugin_tinycolorpicker');
+
+        instance.setColor('#FF0000');
+
+        expect(instance.colorHex).to.equal('#FF0000');
+        expect(instance.colorRGB).to.equal('rgb(255,0,0)');
+    });
+
+    it('should be possible to set to a specific rgb color.', function() {
+        var instance = $('#colorPicker').tinycolorpicker().data('plugin_tinycolorpicker');
+
+        instance.setColor('rgb(255,0,0)');
+
+        expect(instance.colorHex).to.equal('#FF0000');
+        expect(instance.colorRGB).to.equal('rgb(255,0,0)');
+    });
+
+    it('should be possible convert a hex color to rgb color.', function() {
+        var instance = $('#colorPicker').tinycolorpicker().data('plugin_tinycolorpicker');
+
+        expect(instance.hexToRgb('#FF0000')).to.equal('rgb(255,0,0)');
+    });
+
+    it('should be possible convert a rgb color to hex color.', function() {
+        var instance = $('#colorPicker').tinycolorpicker().data('plugin_tinycolorpicker');
+
+        expect(instance.rgbToHex('rgb(255,0,0)')).to.equal('#FF0000');
+    });
 });
