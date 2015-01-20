@@ -16,8 +16,9 @@ module.exports = {
 
     // list of files / patterns to load in the browser
     files: [
-
+        'lib/tinycolorpicker.js',
         'lib/jquery.tinycolorpicker.js',
+        'test/unit/tinycolorpicker.spec.js',
         'test/unit/jquery.tinycolorpicker.spec.js',
         {
             pattern: 'test/fixtures/**/*.html',
