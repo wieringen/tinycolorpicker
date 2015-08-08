@@ -210,11 +210,12 @@ $(document).ready(function()
 {
     // Initialize a colorpicker like this.
     //
-    $('#box').tinycolorpicker();
+    var $box = $('#box');
+    $box.tinycolorpicker();
 
     // Try this to get access to the actual colorpicker instance.
     //
-    var box = $('#box').data("plugin_tinycolorpicker");
+    var box = $box.data("plugin_tinycolorpicker");
 
     // Now you have access to all the methods and properties.
     //
