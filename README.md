@@ -1,6 +1,10 @@
 [tinycolorpicker](http://baijs.com/tinycolorpicker) [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![NPM version][npm-image]][npm-url]
 ==================================================
 
+Support
+----------------------------
+- Browser support differs between the jQuery plugin and the plain Javascript microlib. Specifically, the plain Javascript microlib does not support legacy browsers such as IE6-8. Use the jQuery plugin release if support for those browsers is required.
+
 What you need to build your own version of tinycolorpicker
 --------------------------------------
 

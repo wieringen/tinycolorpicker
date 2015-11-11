@@ -82,7 +82,10 @@
             <section class="block">
                 <!-- google_ad_section_start -->
                 <h2>What is it?</h2>
-                <p>Tiny Colorpicker is a crossbrowser jquery plugin that creates a color picker (form) input. Its a easy way to add color pickers to your forms or user interface.</p>
+                <p>Tiny Colorpicker is a crossbrowser lib that creates a color picker (form) input. Its a easy way to add color pickers to your forms or user interface.</p>
+                <p>It comes in 2 flavours as a <strong>vanilla Javascript microlib</strong> and as a <strong>jQuery plugin</strong>.</p>
+                <p>Browser support differs between the jQuery plugin and the plain Javascript microlib. Specifically, the plain Javascript microlib does not support legacy browsers such as IE6-8. Use the jQuery plugin release if support for those browsers is required.</p>
+
                 <!-- google_ad_section_end -->
 
 
@@ -100,6 +103,7 @@
                 <h2>Features</h2>
                 <ul class="list">
                     <li><strong>IOS, Android and Windows Phone support.</strong></li>
+                    <li><strong>Available as a jQuery plugin and as a vanilla Javascript microlib.</strong></li>
                     <li>AMD, Node, requirejs and commonjs support.</li>
                     <li>Easy customizable</li>
                     <li>Can be used inside forms or outside</li>
@@ -110,8 +114,9 @@
 
             <section class="block">
                 <h2>Examples</h2>
-
+                <p>The examples below are all for the jQuery Plugin. You can find some more (advanced and simple) <a href="examples">examples here</a>. You can also find a example for the plain javascript library there.</p>
                 <p>The example below is the most basic version. The colors are just a image that is taken from the css and drawn to a canvas. So you are completely free in how your picker looks and how its styled.</p>
+
                 <div id="colorPicker1">
                     <a class="color"><div class="colorInner"></div></a>
                     <div class="track"></div>
@@ -228,7 +233,7 @@ $(document).ready(function()
     //
     $box.bind("change", function()
     {
-        console.log("do something whhen a new color is set");
+        console.log("do something when a new color is set");
     });
 });
                 </code></pre>
