@@ -1,6 +1,6 @@
 {
   "name": "tinycolorpicker",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "A lightweight cross browser jQuery based colorpicker.",
   "main": "lib/jquery.tinycolorpicker.js",
   "ignore": [

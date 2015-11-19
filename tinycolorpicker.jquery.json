@@ -1,7 +1,7 @@
 {
   "name": "tinycolorpicker",
   "title": "Tiny Colorpicker",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "A lightweight cross browser jQuery based colorpicker.",
   "homepage": "http://www.baijs.com/tinycolorpicker",
   "repository": {
